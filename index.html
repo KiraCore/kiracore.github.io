@@ -1,711 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Home | Kira Core</title>
-
-	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css"> <!-- BOOTSTRAP LINK -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/aos.css"> <!-- AOS CSS LINK -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- STYLE CSS LINK -->
-
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css"> <!-- FONT AWESOME LINK -->
-
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico"> <!-- FAVICON LINK -->
-</head>
-
-<body>
-
-<!-- HEADER SECTION START -->
-<header class="container-fluid px-0 d-flex sticky-top" id="header">
-	<div class="container d-flex">
-		<!-- NAVBAR START -->
-		<nav class="navbar navbar-expand-lg w-100">
-		    <a class="navbar-brand mr-0" href="index.html">
-		    	<img src="./assets/images/logos/_logo.svg" class="img-fluid">
-		    </a>
-
-		    <span class="navbar_toggler d-lg-none" onclick="openNav()">
-		    	<i class="fas fa-bars"></i>
-		    </span>
-
-		    <div class="collapse navbar-collapse" id="navbarText">
-		        <ul class="navbar-nav mx-auto">
-		            <li class="nav-item active">
-		                <a class="nav-link" href="#_About">About</a>
-		            </li>
-		            <li class="nav-item">
-		                <a class="nav-link" href="#_Team">Team</a>
-		            </li>
-		            <li class="nav-item">
-		                <a target="_blank" class="nav-link" href="https://medium.com/kira-core">Blog</a>
-		            </li>
-		        </ul>
-
-		        <div class="header_social ml-2">
-		            <ul class="list-unstyled mb-0">
-		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://t.me/kirainterex" class="text-decoration-none">
-		            			<i class="fab fa-telegram-plane"></i>
-		            		</a>
-			            </li>
-		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://twitter.com/kira_core" class="text-decoration-none">
-		            			<i class="fab fa-twitter"></i>
-		            		</a>
-			            </li>
-		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://angel.co/company/kiracore" class="text-decoration-none">
-		            			<i class="fab fa-angellist"></i>
-		            		</a>
-			            </li>
-		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://github.com/kiracore" class="text-decoration-none">
-		            			<i class="fab fa-github"></i>
-		            		</a>
-			            </li>
-		            </ul>
-		        </div>
-		    </div>
-
-		    <div id="myNav" class="overlay">
-		    	<a class="navbar-brand mr-0" href="index.html">
-			    	<img src="./assets/images/logos/_logo.png" class="img-fluid">
-			    </a>
-
-			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-			  		<i class="fas fa-times"></i>
-			  	</a>
-
-			  	<div class="overlay-content">
-			    	<a class="" href="#_About" onclick="closeNav()">About</a>
-			    	<a class="" href="#_Team" onclick="closeNav()">Team</a>
-			    	<a target="_blank" class="" href="https://medium.com/kira-core" onclick="closeNav()">Blog</a>
-			  	</div>
-			</div>
-		</nav>
-		<!-- NAVBAR CLOSE -->
-	</div>
-</header>
-<!-- HEADER SECTION CLOSE -->
-
-
-<!-- MAIN SECTION START -->
-<main>
-
-	<!-- BANNER SECTION START -->
-	<section class="banner_section container-fluid px-0 position-relative">
-		<div class="banner_content_box mx-auto">
-			<img src="./assets/images/graphics/_logo_icon.svg" class="img-fluid mx-auto d-block" data-aos="fade-up" data-aos-duration="1000">
-
-			<h1 class="text-center">Building decentralized applications and services geared towards greater financial inclusion</h1>
-			<p class="text-center mt-3">Kira Core, main contributor to the Kira ecosystem</p>
-			<div class="mt-4 text-center">
-				<a href="#_ProductServices" type="button" class="btn custom_btn smoothBtn">Products and Services</a>
-			</div>
-		</div>
-		<div class="arrow_img_box w-100 text-center">
-			<img src="./assets/images/icons/_down_arrow.png" class="img-fluid">
-		</div>
-	</section>
-	<!-- BANNER SECTION CLOSE -->
-
-
-	<!-- ABOUT SECTION START -->
-	<section class="about_section container-fluid" id="_About">
-		<div class="container">
-			<div class="section_heading" data-aos="fade-up" data-aos-duration="1000">
-				<h1 class="text-center mb-3">About</h1>
-				<p class="text-center">Kira Core is a software development company building a full stack DeFi ecosystem and truly distributed applications</p>
-			</div>
-
-			<div class="row">
-				<div class="col-md-5">
-					<div class="abou_img_box" data-aos="fade-up" data-aos-duration="1000">
-						<img src="./assets/images/graphics/_staking-1.png" class="img-fluid d-block">
-					</div>
-				</div>
-
-				<div class="col-md-7">
-					<div class="about_content" data-aos="fade-up" data-aos-duration="1000">
-						<h2 class="mb-3">Staking as a Services</h2>
-						<p>We offer deployment of private validator nodes on any distributed network as well as trusted setup for our own delegators. Token holders can securely stake with us and earn block rewards within the interchain ecosystems such as Cosmos Network, Polkadot and Dfinity.</p>
-						<p>Should also include a <a target="_blank" class="text-decoration-none border-0" href="https://web.archive.org/web/20200720175243/https://goz.cosmosnetwork.dev/2020/05/28/announcing-the-phase-1-winners-of-game-of-zones/">GoZ Award Winner</a> graphical badge</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-5">
-					<div class="abou_img_box" data-aos="fade-up" data-aos-duration="1000">
-						<img src="./assets/images/graphics/_staking-2.png" class="img-fluid d-block">
-					</div>
-				</div>
-
-				<div class="col-md-7">
-					<div class="about_content" data-aos="fade-up" data-aos-duration="1000">
-						<h2 class="mb-3">Development as a Service</h2>
-						<p>Ever wished to create and deploy your distributed applications within the Web3 or Interchain Ecosystem ? Kira Core provides development services with latest, cutting edge frameworks such as Cosmos SDK and Substrate.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-5">
-					<div class="abou_img_box" data-aos="fade-up" data-aos-duration="1000">
-						<img src="./assets/images/graphics/_staking-3.png" class="img-fluid d-block">
-					</div>
-				</div>
-
-				<div class="col-md-7">
-					<div class="about_content" data-aos="fade-up" data-aos-duration="1000">
-						<h2 class="mb-3">Crowdfunding as a Service</h2>
-						<p>New, innovative tool that can help you crowdfund your operations Our powerful network explorer and secure staking infrastructure exposes your investors to minimal possible risks.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ABOUT SECTION CLOSE -->
-
-
-	<!-- PRODUCTS & SERVICES SECTION START -->
-	<section class="product_services_section container-fluid" id="_ProductServices">
-		<div class="container">
-			<div class="section_heading" data-aos="fade-up" data-aos-duration="1000">
-				<h1 class="text-center mb-3">Products and Services</h1>
-			</div>
-
-			<!-- DESKTOP & TABLET VIEW START -->
-			<div class="tabs" id="tabs">
-				<ul class="nav nav-pills nav-justified" role="tablist">
-				    <li class="nav-item">
-				      <a class="nav-link active" data-toggle="pill" href="#tab1">IX Protocol</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" data-toggle="pill" href="#tab2">MBPoS Consensus</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" data-toggle="pill" href="#tab3">IDO Crowdfunding</a>
-				    </li>
-				</ul>
-
-				<div class="tab-content">
-				    <div class="tab-pane fade show  active" id="tab1">
-				        <div class="panel panel-default">
-				            <div class="panel-heading">
-				                <h6 class="panel-title">
-				                    <a data-toggle="collapse" data-parent=".tab-pane" href="#collapseOne">
-				                        IX Protocol
-				                    </a>
-				                </h6>
-				            </div>
-				            <div id="collapseOne" class="panel-collapse collapse in">
-				                <div class="panel-body my-lg-5 mt-md-4 mb-4 mt-0">
-				                    <div class="row">
-								    	<div class="col-md-6">
-											<div class="left_box">
-												<h2 class="mb-3">IX Protocol</h2>
-												<p>Interchain Exchange Protocol (IXP) is the next-generation, white label decentralized exchange solution, engineered for cross-chain transfers and frictionless trading. IXP is secure and trustless, users can directly interact with the blockchain application from within browser or client app, without need for interactions with any centralized backend that can't be trusted or maintain availability during peak hours.</p>
-												<a href="#">Learn More...</a>
-											</div>
-										</div>
-
-										<div class="col-md-6 d-flex flex-column align-items-start mt-4 mt-md-0">
-											<div class="right_box">
-												<ul class="list-unstyled mb-0">
-													<li>Almost infinitely scalable order books</li>
-													<li>Supports trading of staking derivatives</li>
-													<li>Greater legal compliance and user security</li>
-													<li>Allows operating private DEX zones that anyone can trust</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-
-				    <div class="tab-pane fade show " id="tab2">
-				        <div class="panel panel-default">
-				            <div class="panel-heading">
-				                <h6 class="panel-title">
-				                    <a data-toggle="collapse" data-parent=".tab-pane" href="#collapseTwo">
-				                        MBPoS Consensus
-				                    </a>
-				                </h6>
-				            </div>
-				            <div id="collapseTwo" class="panel-collapse collapse">
-				                <div class="panel-body my-lg-5 mt-md-4 mb-4 mt-0">
-				                    <div class="row">
-								    	<div class="col-md-6">
-											<div class="left_box">
-												<h2 class="mb-3">MBPoS Consensus</h2>
-												<p>The Multi-Bonded Proof of Stake (MBPoS) is powered by <a target="_blank" class="border-0" href="https://tendermint.com/">Tendermint</a> and belongs to the family of the Byzantine Fault Tolerant consensus systems. MBPoS enables users to generate revenues from staking both cryptocurrencies and real-world assets such as fiat and commodities.</p>
-												<a href="#">Learn More...</a>
-											</div>
-										</div>
-
-										<div class="col-md-6 d-flex flex-column align-items-start mt-4 mt-md-0">
-											<div class="right_box">
-												<ul class="list-unstyled mb-0">
-													<li>Earn revenue by staking real world assets</li>
-													<li>Maintain liquidity and trade all assets at stake</li>
-													<li>Use derivatives to stake on leverage</li>
-													<li>Maintain unprecedented security</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-
-				    <div class="tab-pane fade show " id="tab3">
-				        <div class="panel panel-default">
-				            <div class="panel-heading">
-				                <h6 class="panel-title">
-				                    <a data-toggle="collapse" data-parent=".tab-pane" href="#collapseThree">
-				                        IDO Crowdfunding
-				                    </a>
-				                </h6>
-				            </div>
-				            <div id="collapseThree" class="panel-collapse collapse">
-				                <div class="panel-body my-lg-5 mt-md-4 mb-4 mt-0">
-				                    <div class="row">
-								    	<div class="col-md-6">
-											<div class="left_box">
-												<h2 class="mb-3">IDO Crowdfunding</h2>
-												<p>The Initial Delegator Offering (IDO) is a crowdfunding mechanism where investors place their existing tokens or assets at stake using one or many PoS networks to “interchain-mine” a new token instead of liquidating their valuable assets to acquire new, highly speculative tokens. Kira Core provides staking services and all necessary tools enabling you to raise funds for your new startup!</p>
-												<a href="#">Learn More...</a>
-											</div>
-										</div>
-
-										<div class="col-md-6 d-flex flex-column align-items-start mt-4 mt-md-0">
-											<div class="right_box">
-												<ul class="list-unstyled mb-0">
-													<li>Invest in crypto and enterprise businesses without spending any of your existing assets</li>
-													<li>Keep full custody over 100% of your investment with the ability to pull out at any time</li>
-													<li>Maintain full liquidity over your investment, trade and participate in DeFi at the same time</li>
-													<li>Mitigate volatility risk, by not having to exchange any of your existing assets for tokens</li>
-													<li>Invest with a negligible risk exposure while enabling new startups to profit and innovate</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-				</div>
-			</div>
-			<!-- DESKTOP & TABLET VIEW CLOSE -->
-
-			<!-- MOBILE VIEW START -->
-			<div id="accordion" class="myaccordion">
-			    <div class="card">
-			        <div class="card-header p-0" id="headingOne">
-			            <div class="mb-0">
-			                <a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			                    IX Protocol
-			                    <span class="fa-stack fa-sm">
-			                        <i class="fas fa-plus fa-stack-1x"></i>
-			                    </span>
-			                </a>
-			            </div>
-			        </div>
-			        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-			            <div class="card-body p-0 my-lg-5 mt-md-4 mb-4 mt-0">
-			                <div class="row">
-						    	<div class="col-md-6">
-									<div class="left_box">
-										<h2 class="mb-3">IX Protocol</h2>
-										<p>Interchain Exchange Protocol (IXP) is the next-generation, white label decentralized exchange solution, engineered for cross-chain transfers and frictionless trading. IXP is secure and trustless, users can directly interact with the blockchain application from within browser or client app, without need for interactions with any centralized backend that can't be trusted or maintain availability during peak hours.</p>
-										<a href="#">Learn More...</a>
-									</div>
-								</div>
-
-								<div class="col-md-6 d-flex flex-column align-items-start mt-4 mt-md-0">
-									<div class="right_box">
-										<ul class="list-unstyled mb-0">
-											<li>Almost infinitely scalable order books</li>
-											<li>Supports trading of staking derivatives</li>
-											<li>Greater legal compliance and user security</li>
-											<li>Allows operating private DEX zones that anyone can trust</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-			            </div>
-			        </div>
-			    </div>
-
-			    <div class="card">
-			        <div class="card-header p-0" id="headingTwo">
-			            <div class="mb-0">
-			                <a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			                    MBPoS Consensus
-			                    <span class="fa-stack fa-2x">
-			                        <i class="fas fa-plus fa-stack-1x"></i>
-			                    </span>
-			                </a>
-			            </div>
-			        </div>
-			        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-			            <div class="card-body p-0 my-lg-5 mt-md-4 mb-4 mt-0">
-			                <div class="row">
-						    	<div class="col-md-6">
-									<div class="left_box">
-										<h2 class="mb-3">MBPoS Consensus</h2>
-										<p>The Multi-Bonded Proof of Stake (MBPoS) is powered by <a target="_blank" class="border-0" href="https://tendermint.com/">Tendermint</a> and belongs to the family of the Byzantine Fault Tolerant consensus systems. MBPoS enables users to generate revenues from staking both cryptocurrencies and real-world assets such as fiat and commodities.</p>
-										<a href="#">Learn More...</a>
-									</div>
-								</div>
-
-								<div class="col-md-6 d-flex flex-column align-items-start mt-4 mt-md-0">
-									<div class="right_box">
-										<ul class="list-unstyled mb-0">
-											<li>Earn revenue by staking real world assets</li>
-											<li>Maintain liquidity and trade all assets at stake</li>
-											<li>Use derivatives to stake on leverage</li>
-											<li>Maintain unprecedented security</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-			            </div>
-			        </div>
-			    </div>
-
-			    <div class="card">
-			        <div class="card-header p-0" id="headingThree">
-			            <div class="mb-0">
-			                <a class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			                    IDO Crowdfunding
-			                    <span class="fa-stack fa-2x">
-			                        <i class="fas fa-plus fa-stack-1x"></i>
-			                    </span>
-			                </a>
-			            </div>
-			        </div>
-			        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-			            <div class="card-body p-0 my-lg-5 mt-md-4 mb-4 mt-0">
-			                <div class="row">
-						    	<div class="col-md-6">
-									<div class="left_box">
-										<h2 class="mb-3">IDO Crowdfunding</h2>
-										<p>The Initial Delegator Offering (IDO) is a crowdfunding mechanism where investors place their existing tokens or assets at stake using one or many PoS networks to “interchain-mine” a new token instead of liquidating their valuable assets to acquire new, highly speculative tokens. Kira Core provides staking services and all necessary tools enabling you to raise funds for your new startup!</p>
-										<a href="#">Learn More...</a>
-									</div>
-								</div>
-
-								<div class="col-md-6 d-flex flex-column align-items-start mt-4 mt-md-0">
-									<div class="right_box">
-										<ul class="list-unstyled mb-0">
-											<li>Invest in crypto and enterprise businesses without spending any of your existing assets</li>
-											<li>Keep full custody over 100% of your investment with the ability to pull out at any time</li>
-											<li>Maintain full liquidity over your investment, trade and participate in DeFi at the same time</li>
-											<li>Mitigate volatility risk, by not having to exchange any of your existing assets for tokens</li>
-											<li>Invest with a negligible risk exposure while enabling new startups to profit and innovate</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			<!-- MOBILE VIEW CLOSE -->
-		</div>
-	</section>
-	<!-- PRODUCTS & SERVICES SECTION CLOSE -->
-
-
-	<!-- OUR TEAM SECTION START -->
-	<section class="team_section container-fluid" id="_Team">
-		<div class="container">
-			<div class="section_heading" data-aos="fade-up" data-aos-duration="1000">
-				<h1 class="text-center mb-3">Our Team</h1>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-3 col-md-4 px-0">
-					<div class="card" data-aos="fade-up" data-aos-duration="1000">
-						<div class="img_box">
-							<img src="./assets/images/profiles/_team_milana.png" class="card-img-top mx-auto d-block">
-							<div class="overlay">
-							    <div class="social_links">
-							    	<ul class="list-unstyled mb-0">
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://www.linkedin.com/in/milanavalmont/" class="text-decoration-none">
-						            			<i class="fab fa-linkedin-in"></i>
-						            		</a>
-							            </li>
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://twitter.com/Milanademort" class="text-decoration-none">
-						            			<i class="fab fa-twitter"></i>
-						            		</a>
-							            </li>
-						            </ul>
-							    </div>
-							</div>
-						</div>
-						<div class="card-body p-0 pt-3 px-4">
-							<h6 class="card-title text-center mb-2">Milana Valmont</h6>
-							<p class="card-text text-center">Co-Founder, CEO</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-4 px-0">
-					<div class="card" data-aos="fade-up" data-aos-duration="1000">
-						<div class="img_box">
-							<img src="./assets/images/profiles/_team_asmodat.png" class="card-img-top mx-auto d-block">
-							<div class="overlay">
-							    <div class="social_links">
-							    	<ul class="list-unstyled mb-0">
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://www.linkedin.com/in/mateusz-grzelak-445b7499/" class="text-decoration-none">
-						            			<i class="fab fa-linkedin-in"></i>
-						            		</a>
-							            </li>
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://twitter.com/asmodat" class="text-decoration-none">
-						            			<i class="fab fa-twitter"></i>
-						            		</a>
-							            </li>
-							            <li class="d-inline-block">
-						            		<a target="_blank" href="https://github.com/asmodat" class="text-decoration-none">
-						            			<i class="fab fa-github"></i>
-						            		</a>
-							            </li>
-						            </ul>
-							    </div>
-							</div>
-						</div>
-						<div class="card-body p-0 pt-3 px-4">
-							<h6 class="card-title text-center mb-2">Mateusz Grzelak</h6>
-							<p class="card-text text-center">Founder, CTO</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-4 px-0">
-					<div class="card" data-aos="fade-up" data-aos-duration="1000">
-						<div class="img_box">
-							<img src="./assets/images/profiles/_team_ethan.png" class="card-img-top mx-auto d-block">
-							<div class="overlay">
-							    <div class="social_links">
-							    	<ul class="list-unstyled mb-0">
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://www.linkedin.com/in/ethanfrey/" class="text-decoration-none">
-						            			<i class="fab fa-linkedin-in"></i>
-						            		</a>
-							            </li>
-							            <li class="d-inline-block">
-						            		<a target="_blank" href="https://github.com/ethanfrey" class="text-decoration-none">
-						            			<i class="fab fa-github"></i>
-						            		</a>
-							            </li>
-						            </ul>
-							    </div>
-							</div>
-						</div>
-						<div class="card-body p-0 pt-3 px-4">
-							<h6 class="card-title text-center mb-2">Ethan Frey</h6>
-							<p class="card-text text-center">Head of Engineering</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-3 col-md-4 px-0">
-					<div class="card" data-aos="fade-up" data-aos-duration="1000">
-						<div class="img_box">
-							<img src="./assets/images/profiles/_team_yuri.png" class="card-img-top mx-auto d-block">
-							<div class="overlay">
-							    <div class="social_links">
-							    	<ul class="list-unstyled mb-0">
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://www.linkedin.com/in/papadiny" class="text-decoration-none">
-						            			<i class="fab fa-linkedin-in"></i>
-						            		</a>
-							            </li>
-						            </ul>
-							    </div>
-							</div>
-						</div>
-						<div class="card-body p-0 pt-3 px-4">
-							<h6 class="card-title text-center mb-2">Yuri Papadin</h6>
-							<p class="card-text text-center">Advisor</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-4 px-0">
-					<div class="card" data-aos="fade-up" data-aos-duration="1000">
-						<div class="img_box">
-							<img src="./assets/images/profiles/_team_joerge.png" class="card-img-top mx-auto d-block">
-							<div class="overlay">
-							    <div class="social_links">
-							    	<ul class="list-unstyled mb-0">
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://www.linkedin.com/in/jorge-rodriguez-115570139/" class="text-decoration-none">
-						            			<i class="fab fa-linkedin-in"></i>
-						            		</a>
-							            </li>
-						            </ul>
-							    </div>
-							</div>
-						</div>
-						<div class="card-body p-0 pt-3 px-4">
-							<h6 class="card-title text-center mb-2">Jorge Rodriguez</h6>
-							<p class="card-text text-center">Security Advisor</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-4 px-0">
-					<div class="card" data-aos="fade-up" data-aos-duration="1000">
-						<div class="img_box">
-							<img src="./assets/images/profiles/_team_niki.png" class="card-img-top mx-auto d-block">
-							<div class="overlay">
-							    <div class="social_links">
-							    	<ul class="list-unstyled mb-0">
-						            	<li class="d-inline-block">
-						            		<a target="_blank" href="https://www.linkedin.com/in/nikiwiles/" class="text-decoration-none">
-						            			<i class="fab fa-linkedin-in"></i>
-						            		</a>
-							            </li>
-						            </ul>
-							    </div>
-							</div>
-						</div>
-						<div class="card-body p-0 pt-3 px-4">
-							<h6 class="card-title text-center mb-2">Niki Wiles</h6>
-							<p class="card-text text-center">Advisor</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- OUR TEAM SECTION CLOSE -->
-
-	<!-- PARTNERS SECTION START -->
-	<section class="partners_section container-fluid">
-		<div class="container">
-			<div class="section_heading" data-aos="fade-up" data-aos-duration="1000">
-				<h1 class="text-center mb-3">Partners</h1>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-3 col-md-4 px-0">
-					<a target="_blank" href="https://persistence.one/" class="text-decoration-none">
-						<div class="card" data-aos="fade-up" data-aos-duration="1000">
-							<div class="img_box">
-								<img src="./assets/images/logos/_partner_simplyvc-1.png" class="card-img-top mx-auto d-block">
-							</div>
-							<div class="card-body p-0 pt-3 px-4">
-								<h6 class="card-title text-center mb-2">Persistence</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-3 col-md-4 px-0">
-					<a target="_blank" href="#" class="text-decoration-none">
-						<div class="card" data-aos="fade-up" data-aos-duration="1000">
-							<div class="img_box">
-								<img src="./assets/images/logos/_partner_simplyvc-2.png" class="card-img-top mx-auto d-block">
-							</div>
-							<div class="card-body p-0 pt-3 px-4">
-								<h6 class="card-title text-center mb-2">Sentinel</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-3 col-md-4 px-0">
-					<a target="_blank" href="https://simply-vc.com.mt/" class="text-decoration-none">
-						<div class="card" data-aos="fade-up" data-aos-duration="1000">
-							<div class="img_box">
-								<img src="./assets/images/logos/_partner_simplyvc-3.png" class="card-img-top mx-auto d-block">
-							</div>
-							<div class="card-body p-0 pt-3 px-4">
-								<h6 class="card-title text-center mb-2">Simply VC</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- PARTNERS SECTION CLOSE -->
-
-</main>
-<!-- MAIN SECTION CLOSE -->
-
-
-<!-- FOOTER SECTION START -->
-<footer  class="container-fluid">
-	<div class="container">
-		<div class="d-md-flex justify-content-md-between align-items-md-start">
-			<div class="footer_logo text-center">
-				<a href="index.html" class="text-decoration-none">
-					<img src="./assets/images/logos/_logo.svg" class="img-fluid">
-				</a>
-			</div>
-
-			<div class="footer_social text-center">
-	            <ul class="list-unstyled mb-0">
-	            	<li class="d-inline-block">
-	            		<a target="_blank" href="https://t.me/kirainterex" class="text-decoration-none">
-	            			<i class="fab fa-telegram-plane"></i>
-	            		</a>
-		            </li>
-	            	<li class="d-inline-block">
-	            		<a target="_blank" href="https://twitter.com/kira_core" class="text-decoration-none">
-	            			<i class="fab fa-twitter"></i>
-	            		</a>
-		            </li>
-	            	<li class="d-inline-block">
-	            		<a target="_blank" href="https://angel.co/company/kiracore" class="text-decoration-none">
-	            			<i class="fab fa-angellist"></i>
-	            		</a>
-		            </li>
-	            	<li class="d-inline-block">
-	            		<a target="_blank" href="https://github.com/kiracore" class="text-decoration-none">
-	            			<i class="fab fa-github"></i>
-	            		</a>
-		            </li>
-	            </ul>
-	        </div>
-
-			<div class="email_link text-center">
-				<a target="_blank" href="partners@kiracore.com" class="text-decoration-none">partners@kiracore.com</a>
-			</div>
-		</div>
-		<p class="copyright text-center mb-0">2020 © All Rights Reserved | KiraCore</p>
-	</div>
-</footer>
-<!-- FOOTER SECTION CLOSE -->
-
+<!DOCTYPE html> 
+<html class="text-black-50"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
+        <title>Kira Core</title>         
+        <link rel="shortcut icon" href="assets/img/favicon-96x96.png"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"> 
+        <link rel="stylesheet" href="assets/css/styles.min.css"> 
+    </head>     
+    <body style="background-image: url(&quot;assets/img/bg-light-13.png&quot;);background-color: #ffffff;background-repeat: round;"> 
+        <div> 
+            <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-sm navigation-clean"> 
+                <div class="container-fluid">
+                    <img src="assets/img/Logo_KIRA_6.png" style="width: 100px;">
+                    <a class="navbar-brand" href="#"></a>
+                    <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                     
+                    <div class="collapse navbar-collapse" id="navcol-1"> 
+                        <ul class="nav navbar-nav ml-auto"> 
+                            <li class="nav-item" role="presentation"></li>                             
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#About" style="font-family: Poppins, sans-serif;">About</a>
+                            </li>                             
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#Team" style="font-family: Poppins, sans-serif;">Team</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#Contact" style="font-family: Poppins, sans-serif;">Contact</a>
+                            </li>                             
+                            <li class="dropdown nav-item"> 
+</li>                             
+                            <li class="nav-item" role="presentation">
+</li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+            </nav>             
+        </div>         
+        <main class="text-justify">
+            <header style="background-color: #ffffff;padding-top: 100px;"> 
+                <div class="container text-center float-none align-items-center">
+                    <img class="align-items-xl-center text-center d-inline-block aos-init aos-animate ml-5" data-aos="fade-right" data-aos-duration="1000" src="assets/img/KIRA-CORE-LOGO.png" style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:100px;" width="250" height="250"> 
+                </div>
+                <div class="container text-center float-none"> 
+</div>
+                <div class="container text-center float-none"> 
+</div>                 
+            </header>             
+            <section class="shadow" id="About" style="background-color: #ffffff;">
+                <div class="container float-none text-center" style="margin-left: 27;padding-top: 2.7%;">
+                    <div class="row"> 
+                        <div class="col-md-12 text-center"> 
+                            <h1 data-aos="fade-right" data-aos-duration="1000" style="font-family: Poppins, sans-serif;color: #000000;font-weight: 300;margin-left: 30px;" class="aos-init aos-animate text-black-50">Kira Core JSC is a software development company offering a full stack of engineering services&nbsp;<br></h1>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 5px;">
+                        <div class="col-md-12 text-center float-none">
+                            <p class="aos-init aos-animate text-center float-none" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200" style="font-family: Poppins, sans-serif;color: #000000;background-color: rgba(255,255,255,0.17);padding: 0px;margin: 0px;margin-left: 25px;margin-right: 25px;">Our focus is to build decentralized applications and services geared towards greater financial inclusion<br><br></p> 
+                        </div>                         
+                    </div>
+                    <div class="row"> 
+                        <section style="padding-top: 50px;background-color: #ffffff;padding-bottom: 50px;margin-left: 27px;">
+                            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1850" data-aos-delay="1000" data-aos-once="true"> 
+                                <div class="row" style="background-color: #ffffff;">
+                                    <div class="col-md-4"> 
+                                        <div class="text-center">
+                                            <img src="assets/img/data.png" style="width: 100px;">
+                                        </div>                                         
+                                        <h2 class="text-center" style="font-family: Poppins, sans-serif;font-size: 17px;"><strong>Staking as a Service</strong><br></h2> 
+                                        <p style="font-family: Poppins, sans-serif; text-align: justify;" class="text-justify"></p>
+                                        <p style="font-family: Poppins, sans-serif; text-align: justify;" class="text-justify">More than <b>$1'000'000</b> is currently delegated to the <b>KIRA Staking</b> validator nodes on&nbsp;<a href="https://medium.com/kira-core/kira-cosmos-hub-validator-db1828264506" target="_blank" class="text-warning">Cosmos Network</a> and Kusama</p>
+                                        <p style="font-family: Poppins, sans-serif; text-align: justify;" class="text-justify">We offer deployment of private validator nodes on any distributed network as well as trusted setup for our own delegators</p> 
+                                    </div>                                     
+                                    <div class="col-md-4 text-justify">
+                                        <div class="text-center">
+                                            <img src="assets/img/IDOaaS.svg" style="width: 100px;">
+                                        </div>                                         
+                                        <h2 class="text-center" style="font-family: Poppins, sans-serif;font-size: 17px;"><strong>Crowdfunding as a Service</strong></h2> 
+                                        <p style="font-family: Poppins, sans-serif;" class="text-justify"><a href="https://github.com/KiraCore/Kira-Protocol-Documentation/blob/master/Kira-Protocol-Whitepaper.pdf" target="_blank" class="text-warning" style="background-color: rgb(255, 255, 255); font-size: 1rem;">Initial Delegator Offering</a><span style="font-size: 1rem;">&nbsp;(IDO) is a new, innovative tool that can help you crowdfund your operations</span><br></p>
+                                        <p style="font-family: Poppins, sans-serif;" class="text-justify">Our powerfull network explorer and&nbsp; secure staking infrastructure exposes your investors to minimal possible risks</p>
+                                    </div>                                     
+                                    <div class="col-md-4"> 
+                                        <div class="text-center">
+                                            <img src="assets/img/R&DaaS.svg" style="width: 100px;">
+                                        </div>                                         
+                                        <h2 class="text-center" style="font-family: Poppins, sans-serif;font-size: 17px;"><strong>Development as a Service</strong><br></h2> 
+                                        <p style="font-family: Poppins, sans-serif;" class="text-justify">Ever wished to create and deploy your distributed applications within the Web3 or Interchain Ecosystem ?<br></p>
+                                        <p style="font-family: Poppins, sans-serif;" class="text-justify">Kira Core provides development services with latest, cutting edge frameworks such as <a href="https://github.com/cosmos/cosmos-sdk" target="_blank" class="text-warning">Cosmos SDK</a> and <a href="https://substrate.dev/" target="_blank" class="text-warning">Substrate</a>&nbsp;</p> 
+                                    </div>
+                                </div>                                 
+                            </div>
+                        </section>                         
+                    </div>
+                </div>
+            </section>             
+            <section class="border-white" id="Team" style="padding-bottom: 60px;padding-top: 0px;">
+                <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" style="padding-top: 2.7%;"> 
+                    <div class="col-md-4 text-center" style="max-width: 100%;"> 
+                        <h1 style="font-family: Poppins, sans-serif;font-weight: 200;">Core Team<br></h1>
+                        <p><br></p> 
+                    </div>                     
+                    <div class="row"> 
+                        <div class="col-md-4 text-center" style="padding-top: 5px;">
+                            <img class="rounded" src="assets/img/milanavalmont.jpg" style="max-width: 180px;padding-right: 0px;margin-right: 0px;margin-left: 0px;"> 
+                            <h4 class="text-center" style="margin-bottom: 0px;">Milana Valmont<br></h4> 
+                            <p class="text-center" style="margin-bottom: 10px;padding-top: 1px;"><em>Co-Founder &amp; Chief Executive Officer</em><br></p> 
+                            <div class="text-center icons">
+                                <a href="https://www.linkedin.com/in/milanavalmont/" target="_blank"><i class="fab fa-linkedin-in" style="padding-left: 3px;font-size: 20px;color: #693B93;"></i></a>
+                                <a href="https://twitter.com/Milanademort" target="_blank"><i class="fab fa-twitter" style="padding-left: 3px;font-size: 20px;color: #693B93;"></i></a>
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-4 text-center" style="padding-top: 5px;">
+                            <img src="assets/img/asmodat.png" style="max-width: 180px;padding-right: 0px;margin-right: 0px;margin-left: 0px;"> 
+                            <h4 class="text-center" style="margin-bottom: 0px;"><strong>Mateusz Grzelak</strong><br></h4> 
+                            <p class="text-center" style="margin-bottom: 10px;padding-top: 1px;"><em>Founder &amp; Chief Technology Officer</em><br></p> 
+                            <div class="text-center icons">
+                                <a href="https://www.linkedin.com/in/mateusz-grzelak-445b7499/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 20px;padding-left: 3px;color: #693B93;"></i></a>
+                                <a href="https://github.com/asmodat" target="_blank"><i class="fab fa-github" style="padding-left: 3px;font-size: 20px;color: #693B93;"></i></a> 
+                                <a href="https://twitter.com/asmodat" target="_blank"><i class="fab fa-twitter" style="padding-left: 3px;font-size: 20px;color: #693B93;"></i></a> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-4 text-center" style="padding-top: 5px;">
+                            <img src="assets/img/ethan.jpg" style="max-width: 180px;padding-right: 0px;margin-right: 0px;"> 
+                            <h4 class="text-center" style="margin-bottom: 0px;"><strong>Ethan Frey</strong><br></h4> 
+                            <p class="text-center" style="margin-bottom: 10px;padding-top: 1px;"><em>Head of Engineering</em><br></p> 
+                            <div class="text-center icons">
+                                <a href="https://www.linkedin.com/in/ethanfrey/" target="_blank"><i class="fab fa-linkedin-in" style="padding-left: 3px;font-size: 20px;color: #693B93;"></i></a>&nbsp;
+                            </div>
+                        </div>                         
+                    </div>                     
+                </div>
+            </section>             
+            <section style="padding-top: 50px;background-color: #ffffff;padding-bottom: 50px;margin-left: 27px;"> 
+                <div class="container"> 
+                    <h1 class="text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true" style="font-family: Poppins, sans-serif;font-weight: 200;">Our Partners</h1> 
+                    <div class="row d-xl-flex justify-content-xl-center" style="background-color: #ffffff;padding-top: 25px;padding-bottom: 25px;"> 
+                        <div class="col-md-10"> 
+                            <div class="text-center">
+                                <a href="https://simply-vc.com.mt/" target="_blank"><img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true" src="assets/img/simplyVC.png" style="height: 100px;" class="aos-init aos-animate"></a>
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div class="row d-xl-flex justify-content-xl-center" style="background-color: #ffffff;padding-top: 25px;padding-bottom: 25px;"> 
+                        <div class="col-md-10"> 
+                            <div class="text-center">
+                                <a href="https://persistence.one" target="_blank"><img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true" src="assets/img/PersistenceOne.png" style="height: 100px;" class="aos-init aos-animate"></a>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>             
+            <section class="text-center border-dark shadow-sm text-white" style="background-color: #37434d; padding-top: 30px; padding-bottom: 30px; font-size: 20;" id="Contact">
+                <div class="container"> 
+                    <div class="row d-xl-flex justify-content-xl-center"></div>                     
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->                     
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;"> 
+                        <input name="b_a75a5f40c8842455d972a9f23_f39e2354f8" tabindex="-1" type="text" value=""> 
+                    </div>                     
+                </div>
+                <h1 class="text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true" style="font-family: Poppins, sans-serif;font-weight: 200;">Contact us at</h1> 
+                <strong><a href="mailto: partners@kiracore.com" target="_blank" class="text-warning" style="font-size: 16px;">partners@kiracore.com</a></strong>
+            </section>
+        </section>         
+    </main>     
+    <footer style="font-family: Poppins, sans-serif;background-color: #ffffff;"> 
+        <div class="container"> 
+            <div class="row"></div>             
+            <p class="text-center copyright" style="color: #9a9b9c;"><br>Copyright © 2020 Kira Core JSC<br></p> 
+        </div>         
+    </footer>     
+    <div id="hoverIcons"> 
+        <ul class="list-unstyled"> 
+            <li>
+                <a href="https://www.linkedin.com/company/kiracore" target="_blank"><i class="fab fa-linkedin-in" style="color: rgb(255,255,255);"></i></a>
+            </li>             
+            <li>
+                <a href="https://medium.com/kira-core" target="_blank"><i class="fab fa-medium-m" style="color: rgb(255,255,255);"></i></a>
+            </li>             
+            <li>
+                <a href="https://github.com/kiracore" target="_blank" style="color: rgb(255,255,255);"><i class="fab fa-github-alt"></i></a>
+            </li>             
+        </ul>         
+    </div>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>     
+    <script src="assets/js/script.min.js"></script>     
 </body>
-
-
-<script src="./assets/js/jquery-3.5.1.min.js"></script> <!-- JQUERY JS SCRIPT -->
-<script src="./assets/js/popper.js"></script> <!-- POPPER JS SCRIPT -->
-<script src="./assets/js/bootstrap.min.js"></script> <!-- BOOTSTRAP JS SCRIPT -->
-<script src="./assets/js/aos.js"></script> <!-- AOS JS SCRIPT -->
-<script src="./assets/js/main.js"></script> <!-- MAIN JS SCRIPT -->
-
-<script>
-  	AOS.init();
-</script>
-
-</html>
