@@ -1,0 +1,927 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import 'variables';
+@import 'mixin';
+
+@include font-face('RedHatText', '#{$fontsPath}/RedHatText-Medium', 500, normal, eot svg ttf woff2 woff);
+@include font-face('RedHatText', '#{$fontsPath}/RedHatText-Regular', 400, normal, eot svg ttf woff2 woff);
+
+h1, h2, h3, h4, h5, h6, button {
+	font-family: 'RedHatText';
+	font-weight: 500 !important;
+}
+p, input, select, textarea {
+	font-family: 'RedHatText' !important; 
+	font-weight: 400 !important;
+	line-height: 27px;
+}
+input:focus, select:focus, textarea:focus, button:focus, .btn:focus {
+	outline: none !important;
+	box-shadow: 0 0 0 transparent !important;
+}
+
+/* WIDTH */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* TRACK */
+::-webkit-scrollbar-track {
+    background-color: $Blue;
+}
+/* HANDLE */
+::-webkit-scrollbar-thumb {
+    background-color: $Yellow;
+}
+/* HANDLE ON HOVER */
+::-webkit-scrollbar-thumb:hover {
+    background-color: $Yellow;
+}
+
+
+
+// MAIN START
+main {
+	margin-top: -56px;
+}
+// MAIN CLOSE
+
+
+// HEADER START
+header {
+	background-color: transparent;
+	@include hoverTransition;
+
+	&#header.active {
+		background-color: $Blue;
+		-webkit-box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .1);
+		-moz-box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .1);
+		box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .1);
+		@include hoverTransition;
+    }
+
+    span.navbar_toggler i {
+		font-size: 24px;
+		color: $White;
+	}
+
+	nav {
+
+		a.navbar-brand img {
+			max-width: 150px;
+		}
+
+		#navbarText ul li a.nav-link {
+			font-family: 'RedHatText';
+			font-weight: 500;
+			color: $White;
+			margin: 0 20px;
+			position: relative;
+
+			&:hover, &:focus, &.active {
+				color: $Orange;
+				@include hoverTransition;
+			}
+
+			&:hover:after, &:focus:after, &.active:after {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -4px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: $Orange;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				@include hoverTransition;
+			}
+		}
+
+		.header_social ul li a {
+			color: $White;
+			font-size: 18px;
+			margin: 0 10px !important;
+
+			&:hover, &:focus, &.active {
+				color: $Orange;
+				@include hoverTransition;
+			}
+		}
+	}
+
+	.overlay {
+		height: 0%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url(../images/banners/_main_bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left top;
+		overflow-y: scroll;
+		z-index: 1051;
+
+		.overlay-content {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+
+			a {
+				font-family: 'RedHatText';
+				font-weight: 500;
+				font-size: 24px;
+				color: $White;
+				padding: 8px;
+				text-decoration: none;
+				display: block;
+				transition: 0.3s;
+
+				&:hover, 
+				&.active {
+					color: $Orange;
+				}
+			}
+		}
+
+		a.navbar-brand {
+			position: absolute;
+			top: 8px;
+			left: 55px;
+		}
+
+		.closebtn {
+			position: absolute;
+			top: 5px;
+			right: 50px;
+			font-size: 24px;
+			color: $White;
+		}
+
+		@media only screen and (max-width: 576px) {
+			a.navbar-brand {
+				position: absolute;
+				top: 8px;
+				left: 31px;
+			}
+
+			.closebtn {
+				position: absolute;
+				top: 5px;
+				right: 25px;
+			}
+		}
+	}
+}
+// HEADER CLOSE
+
+
+// BANNER START
+section.banner_section {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../images/banners/_main_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;	
+
+	.banner_content_box {
+	    width: 75% !important;
+
+	    img {
+	    	margin-bottom: 50px;
+	    }
+
+	    h1 {
+	    	color: $White;
+	    	font-weight: 500 !important;
+	    	font-size: 42px !important;
+	    }
+
+	    p {
+	    	color: $White;
+	    	font-size: 20px !important;
+	    }
+
+	    @media only screen and (max-width: 1024px) {
+	    	& {
+				width: 92% !important;
+
+				img {
+			    	margin-bottom: 30px;
+			    }
+	    	}
+	    }
+	    @media only screen and (max-width: 768px) {
+	    	& {
+				width: 95% !important;
+
+			    h1 {
+			    	font-size: 32px !important;
+			    }
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				width: 95% !important;
+
+				img {
+			    	width: 40%;
+			    }
+
+				h1 {
+			    	font-size: 24px !important;
+			    }
+
+			    a.custom_btn {
+					padding: 10px 15px;
+				}
+	    	}
+	    }
+	}
+
+	a.custom_btn {
+		@include customBtn;
+
+		&:hover, &:focus, &:active {
+			@include customBtnHover;
+		}
+	}
+
+	.arrow_img_box {
+	margin-top:53px;
+	    
+	}
+}
+// BANNER CLOSE
+
+
+// ABOUT SECTION START
+section.about_section {
+	background-color: $White;
+	padding-top: 100px;
+
+	.container {
+		@media only screen and (max-width: 576px) {
+	    	& {
+				padding-left: 0;
+				padding-right: 0;
+	    	}
+	    }
+	}
+
+	.section_heading {
+		width: 50%;
+		padding-bottom: 60px;
+		margin: auto;
+
+		h1 {
+			color: $darkBlue;
+			font-size: 42px;
+		}
+
+		p {
+			color: $darkBlue;
+			font-size: 18px;
+		}
+
+		@media only screen and (max-width: 768px) {
+	    	& {
+				width: 80%;
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				width: 100%;
+				padding-bottom: 30px;
+	    	}
+	    }
+	}
+
+	.row {
+		margin-bottom: 100px;
+
+		&:nth-child(odd) {
+			
+			img {
+				margin-right: auto;
+			}
+		}
+
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+
+			img {
+				margin-left: auto;
+			}
+		}
+
+		img {
+			width: 70%;
+		}
+
+		h2 {
+			color: $darkBlue
+		}
+
+		p {
+			color: $darkBlue;
+			font-size: 18px;
+			line-height: 35px;
+			padding-right: 70px;
+		}
+
+		@media only screen and (max-width: 768px) {
+	    	& {
+				img {
+					width: 90%;
+				}
+
+				p {
+					padding-right: 0;
+				}
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				img {
+					margin: auto;
+					margin-bottom: 30px;
+				}
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				margin-bottom: 50px;
+	    	}
+	    }
+
+	    a {
+			font-family: 'RedHatText';
+			color: $lightBlue;
+			border-bottom: 2px solid $lightBlue;
+			text-decoration: none;
+
+			&:hover {
+				color: $Orange;
+				border-bottom: 2px solid $Orange;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+    	& {
+			padding-top: 50px;
+    	}
+    }
+}
+// ABOUT SECTION CLOSE
+
+
+// PRODUCTS & SERVICES SECTION START
+section.product_services_section {
+	background-color: $lightGray;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	.container {
+		@media only screen and (max-width: 576px) {
+	    	& {
+				padding-left: 0;
+				padding-right: 0;
+	    	}
+	    }
+	}
+
+	.section_heading {
+		width: 50%;
+		padding-bottom: 60px;
+		margin: auto;
+
+		h1 {
+			color: $darkBlue;
+			font-size: 42px;
+		}
+
+		p {
+			color: $darkBlue;
+			font-size: 18px;
+		}
+
+		@media only screen and (max-width: 768px) {
+	    	& {
+				width: 80%;
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				width: 100%;
+				padding-bottom: 30px;
+	    	}
+	    }
+	}
+
+    .row {
+    	.left_box {
+    		background-color: $White;
+    		height: 100%;
+    		padding: 40px 35px;
+    		margin-right: 50px;
+
+    		@media only screen and (max-width: 768px) {
+    			& {
+    				margin-right: 0;
+    			}
+    		}
+    	}
+
+    	.right_box {
+    		padding: 0 35px;
+    		height: 100%;
+
+    		ul {
+    			list-style-image: url(../images/icons/_point.png);
+			
+				li {
+					font-family: 'RedHatText';
+					color: $darkBlue;
+					font-size: 18px;
+					line-height: 35px;
+					margin-bottom: 50px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			@media only screen and (max-width: 768px) {
+    			& {
+    				padding-right: 0;
+    			}
+    		}
+    		@media only screen and (max-width: 576px) {
+    			& {
+    				padding-left: 25px;
+    				padding-right: 0;
+
+    				ul {
+    					li {
+    						margin-bottom: 25px;
+
+							&:last-child {
+								margin-bottom: 0;
+							}
+    					}
+    				}
+    			}
+    		}
+    	}
+
+    	h2 {
+			color: $darkBlue;
+
+			@media only screen and (max-width: 576px) {
+				& {
+					font-size: 20px;
+				}
+			}
+		}
+
+		p {
+			color: $darkBlue;
+			font-size: 18px;
+			line-height: 35px;
+		}
+
+		a {
+			font-family: 'RedHatText';
+			color: $lightBlue;
+			border-bottom: 2px solid $lightBlue;
+			text-decoration: none;
+
+			&:hover {
+				color: $Orange;
+				border-bottom: 2px solid $Orange;
+			}
+		}
+    }
+
+    ul.nav-pills li.nav-item a.nav-link {
+		background-color: $White !important;
+		font-family: 'RedHatText';
+		font-family: 'RedHatText';
+		font-size: 18px;
+		font-weight: 500;
+		color: $darkBlue !important;
+		border-radius: 0 !important;
+		@include hoverTransition;
+	}
+
+	ul.nav-pills li.nav-item a.nav-link:hover,
+	ul.nav-pills li.nav-item a.nav-link:focus,
+	ul.nav-pills li.nav-item a.nav-link:active,
+	ul.nav-pills li.nav-item a.nav-link.active {
+		background-color: $Blue !important;
+		color: $White !important;
+		@include hoverTransition;
+	}
+
+	@media (min-width: 768px) {
+	    #accordion {
+	        display: none;
+	    }
+
+	    .panel-heading {
+	        display: none;
+	    }
+
+	    .panel {
+	        border: none;
+	        box-shadow: none;
+	    }
+
+	    .panel-collapse {
+	        height: auto;
+	    }
+
+	    .panel-collapse.collapse {
+	        display: block;
+	    }
+	}
+
+	@media (max-width: 767px) {
+		#tabs {
+	        display: none;
+	    }
+
+	    #accordion {
+	    	div.card {
+	    		background-color: transparent !important;
+	    		box-shadow: 0 !important;
+	    		border: 0 !important;
+	    	}
+
+	    	div.card-header {
+	    		background-color: $White !important;
+	    		box-shadow: 0 !important;
+	    	}
+
+	    	div.card-header a {
+		        display: block;
+		        background-color: $White !important;
+				font-family: 'RedHatText';
+				font-size: 18px;
+				font-weight: 500;
+				color: $darkBlue !important;
+				border-radius: 0 !important;
+				text-align: center;
+				text-decoration: none;
+				padding: 12px 16px;
+				@include hoverTransition;
+		    }
+
+		    div.card-header a:hover,
+			div.card-header a:focus,
+			div.card-header a:active,
+			div.card-header a.active {
+				background-color: $Blue !important;
+				color: $White !important;
+				@include hoverTransition;
+			}
+
+			div.card-header a:hover .fa-stack,
+			div.card-header a:focus .fa-stack,
+			div.card-header a:active .fa-stack,
+			div.card-header a.active .fa-stack {
+				background-color: $Blue !important;
+				color: $White !important;
+				@include hoverTransition;
+			}
+
+			div.card-header a .fa-stack {
+			    font-size: 12px;
+			    color: $darkBlue !important;
+			    @include hoverTransition;
+			}
+
+			div.card-body {
+				background-color: transparent !important;
+			}
+
+			h2 {
+				font-size: 20px;
+			}
+	    }
+
+		.myaccordion li + li {
+		    margin-top: 10px;
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+    	& {
+			padding-top: 50px;
+			padding-bottom: 50px;
+    	}
+    }
+}
+// PRODUCTS & SERVICES SECTION CLOSE
+
+
+// OUR TEAM SECTION START
+section.team_section {
+	background-color: $Blue;
+	background-image: url(../images/banners/_team_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 50px;
+
+	.section_heading {
+		width: 50%;
+		padding-bottom: 60px;
+		margin: auto;
+
+		h1 {
+			color: $White;
+			font-size: 42px;
+		}
+
+		p {
+			color: $White;
+			font-size: 18px;
+		}
+
+		@media only screen and (max-width: 768px) {
+	    	& {
+				width: 80%;
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				width: 100%;
+				padding-bottom: 30px;
+	    	}
+	    }
+	}
+
+	.row {
+		.card {
+			background-color: transparent;
+			border: 0;
+			margin-bottom: 50px;
+
+			@media only screen and (max-width: 576px) {
+		    	& {
+					margin-bottom: 35px;
+		    	}
+		    }
+
+			.img_box {
+			    position: relative;
+			    width: 100%;
+			    height: 100%;
+			    margin: auto;
+			    overflow: hidden;
+
+			    img {
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    bottom: 0;
+				    right: 0;
+				    padding: 4px;
+				    color: #ffffff;
+				    line-height: 100%;
+				    text-align: center;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    object-fit: contain;
+				    object-position: center;
+				    width: 100%;
+				    height: 100%;
+				    margin: auto;
+				    @include hoverTransition;
+				}
+			}
+
+			.img_box:before {
+			    content: "";
+			    display: block;
+			    padding-top: 100%;
+			    /* initial ratio of 1:1*/
+			}
+
+			.card-body {
+
+				h6 {
+					color: $White;
+					font-weight: 400;
+					font-size: 20px;
+				}
+
+				p {
+					color: $White;
+					font-size: 16px;
+				}
+			}
+
+			.overlay {
+				-webkit-transition: .5s ease;
+				transition: .5s ease;
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			.img_box:hover img {
+				opacity: .6;
+			}
+
+			.img_box:hover .overlay {
+				opacity: 1;
+			}
+
+			.social_links ul li a {
+				background-color: $White;
+				color: $Orange;
+				font-size: 20px;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				display: block;
+				@include hoverTransition;
+
+				&:hover {
+					background-color: $Orange;
+					color: $White;
+					@include hoverTransition;
+				}
+			}
+		}
+	}	
+
+	@media only screen and (max-width: 576px) {
+    	& {
+			padding-top: 50px;
+			padding-bottom: 15px;
+    	}
+    }
+}
+// OUR TEAM SECTION CLOSE
+
+
+// PARTNERS SECTION START
+section.partners_section {
+	background-color: $White;
+	padding-top: 100px;
+	padding-bottom: 50px;
+
+	.section_heading {
+		width: 50%;
+		padding-bottom: 60px;
+		margin: auto;
+
+		h1 {
+			color: $darkBlue;
+			font-size: 42px;
+		}
+
+		p {
+			color: $darkBlue;
+			font-size: 18px;
+		}
+
+		@media only screen and (max-width: 768px) {
+	    	& {
+				width: 80%;
+	    	}
+	    }
+	    @media only screen and (max-width: 576px) {
+	    	& {
+				width: 100%;
+				padding-bottom: 30px;
+	    	}
+	    }
+	}
+
+	.row {
+		.card {
+			background-color: transparent;
+			border: 0;
+			margin-bottom: 50px;
+
+			@media only screen and (max-width: 576px) {
+		    	& {
+					margin-bottom: 35px;
+		    	}
+		    }
+
+		    .img_box {
+		    	img {
+		    		width: 60px;
+		    		height: auto;
+		    		margin-bottom: 15px;
+		    	}
+		    }
+
+			.card-body {
+
+				h6 {
+					color: $darkBlue;
+					font-weight: 400;
+					font-size: 20px;
+				}
+
+				p {
+					color: $darkBlue;
+					font-size: 16px;
+				}
+			}
+		}
+	}	
+
+	@media only screen and (max-width: 576px) {
+    	& {
+			padding-top: 50px;
+			padding-bottom: 15px;
+    	}
+    }
+}
+// PARTNERS SECTION CLOSE
+
+
+// FOOTER SECTION START
+footer {
+	background-color: $darkBlue;
+	border-bottom: 7px solid $Blue;
+	padding-top: 100px;
+	padding-bottom: 15px;
+
+	.footer_logo {
+		margin-bottom: 30px;
+
+		img {
+			max-width: 150px;
+		}
+	}
+
+	.footer_social {
+		margin-bottom: 30px;
+
+		ul li a {
+			color: $White;
+			font-size: 18px;
+			margin: 0 10px !important;
+
+			&:hover, &:focus, &.active {
+				color: $Orange;
+				@include hoverTransition;
+			}
+		}
+	}
+
+	.email_link {
+		margin-bottom: 30px;
+
+		a {
+			font-family: 'RedHatText';
+			color: $White;
+
+			&:hover, &:focus, &.active {
+				color: $Orange;
+				@include hoverTransition;
+			}
+		}
+	}
+
+	p.copyright {
+		font-family: 'RedHatText';
+		color: $White;
+		font-size: 12px;
+	}
+
+	@media only screen and (max-width: 576px) {
+    	& {
+			padding-top: 50px;
+    	}
+    }
+}
+// FOOTER SECTION CLOSE
