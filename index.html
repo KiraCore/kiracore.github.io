@@ -6,6 +6,7 @@
 
 	<title>Home | Kira Core</title>
 
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css"> <!-- MAIN CSS LINK -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- BOOTSTRAP LINK -->
 	<link rel="stylesheet" type="text/css" href="assets/css/aos.css"> <!-- AOS CSS LINK -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- STYLE CSS LINK -->
@@ -14,6 +15,29 @@
 </head>
 
 <body>
+	<script>
+		var headings = [
+			'Building the future geared towards greater financial inclusion', 
+			'Revolutionizing <span style="color: #ffbb00">De</span>centralized <span style="color: #ffbb00">Fi</span>nance with Liquid Staking', 
+			];
+		var counter = 0; 
+		var inst = setInterval(show, 10000);
+
+		function show() {
+			var textHeadline = document.getElementById("text_headline");
+			if(textHeadline == null){
+				return;
+			}
+			textHeadline.style.transition = "0.1s"; 
+			textHeadline.style.transitionDuration = "1.5s"; 
+			textHeadline.style.opacity = 0;
+			setTimeout(function(){
+			    textHeadline.innerHTML = headings[counter];
+			    textHeadline.style.opacity = 1;
+			    counter = (counter + 1) % headings.length;
+		    }, 1500)
+		}
+	</script>
 
 <!-- HEADER SECTION START -->
 <header class="container-fluid px-0 d-flex sticky-top" id="header">
@@ -37,29 +61,29 @@
 		                <a class="nav-link" href="#_Team">Team</a>
 		            </li>
 		            <li class="nav-item">
-		                <a target="_blank" class="nav-link" href="https://medium.com/kira-core">Blog</a>
+		                <a target="_blank" rel="noopener noreferrer" class="nav-link" onclick="window.open('https://medium.com/kira-core','_blank')">Blog</a>
 		            </li>
 		        </ul>
 
 		        <div class="header_social ml-2">
 		            <ul class="list-unstyled mb-0">
 		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://t.me/kirainterex" class="text-decoration-none">
+		            		<a target="_blank" rel="noopener noreferrer" href="https://t.me/kirainterex" class="text-decoration-none">
 		            			<i class="fab fa-telegram-plane"></i>
 		            		</a>
 			            </li>
 		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://twitter.com/kira_core" class="text-decoration-none">
+		            		<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kira_core" class="text-decoration-none">
 		            			<i class="fab fa-twitter"></i>
 		            		</a>
 			            </li>
 		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://angel.co/company/kiracore" class="text-decoration-none">
+		            		<a target="_blank" rel="noopener noreferrer" href="https://angel.co/company/kiracore" class="text-decoration-none">
 		            			<i class="fab fa-angellist"></i>
 		            		</a>
 			            </li>
 		            	<li class="d-inline-block">
-		            		<a target="_blank" href="https://github.com/kiracore" class="text-decoration-none">
+		            		<a target="_blank" rel="noopener noreferrer" href="https://github.com/kiracore" class="text-decoration-none">
 		            			<i class="fab fa-github"></i>
 		            		</a>
 			            </li>
@@ -79,7 +103,7 @@
 			  	<div class="overlay-content">
 			    	<a class="" href="#_About" onclick="closeNav()">About</a>
 			    	<a class="" href="#_Team" onclick="closeNav()">Team</a>
-			    	<a target="_blank" class="" href="https://medium.com/kira-core" onclick="closeNav()">Blog</a>
+			    	<a target="_blank" rel="noopener noreferrer" class="" href="https://medium.com/kira-core" onclick="closeNav()">Blog</a>
 			  	</div>
 			</div>
 		</nav>
@@ -95,9 +119,9 @@
 	<!-- BANNER SECTION START -->
 	<section class="banner_section container-fluid px-0 position-relative">
 		<div class="banner_content_box mx-auto">
-			<img src="assets/images/graphics/_logo_icon.svg" class="img-fluid mx-auto d-block" data-aos="fade-up" data-aos-duration="1000">
+            <img src="assets/images/graphics/_logo_icon.svg" class="img-fluid mx-auto d-block" data-aos="fade-up" data-aos-duration="1000">
 
-			<h1 class="text-center">Building the future geared towards greater financial inclusion</h1>
+			<h1 id="text_headline" class="text-center" >Revolutionizing <span style="color: #ffbb00">De</span>centralized <span style="color: #ffbb00">Fi</span>nance with Liquid Staking</h1>
 			<p class="text-center mt-3">Kira Core is the main contributor to the Kira ecosystem</p>
 			<div class="mt-4 text-center">
 				<a href="#_ProductServices" type="button" class="btn custom_btn smoothBtn">Learn More</a>
