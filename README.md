@@ -1,1 +1,3 @@
-# Kira-Exchange.github.io
+# KiraCore.github.io
+
+Kira Core JSC Website
